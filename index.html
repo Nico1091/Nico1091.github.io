@@ -8,7 +8,22 @@
     <script src="informacion_usuarios.js" defer></script>
 </head>
 <body>
-    <div id="datos_empleado">
+
+    <!-- Pantalla de inicio -->
+    <div id="inicio">
+        <h2>¿Eres empleado o empleador?</h2>
+        <button onclick="mostrarFormulario('empleador')">Empleador</button>
+        <button onclick="mostrarFormulario('empleado')">Empleado</button>
+    </div>
+
+    <!-- Formulario para empleador -->
+    <div id="datos_empleador" style="display: none;">
+        <input id="nombre_empleador" type="text" placeholder="Digite aquí su nombre" required>
+        <input id="telefono_empleador" type="text" placeholder="Digite aquí su teléfono">
+    </div>
+
+    <!-- Formulario para empleado -->
+    <div id="datos_empleado" style="display: none;">
         <input id="nombre" type="text" placeholder="Digite aquí su nombre" required>
         <input id="correo_electronico" type="text" placeholder="Digite aquí su correo electrónico" required>
         <input id="telefono" type="text" placeholder="Digite aquí su teléfono">
@@ -16,5 +31,13 @@
         <input id="archivo" type="file">
         <button onclick="guardarInformacion()">Guardar Información</button>
     </div>
+
+    <!-- Buscador de empleados -->
+    <div id="buscador_empleados" style="display: none;">
+        <input id="buscar_nombre" type="text" placeholder="Buscar empleado por nombre">
+        <button onclick="buscarEmpleado()">Buscar</button>
+        <div id="resultado_busqueda"></div>
+    </div>
+
 </body>
 </html>

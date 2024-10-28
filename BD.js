@@ -1,3 +1,4 @@
+//Beta en caso de tratar conectar a Teamdesk
 const axios = require('axios');
 
 const API_URL = 'https://www.googletagmanager.com/gtag/js?id=G-7SFQ1E8YEY';
