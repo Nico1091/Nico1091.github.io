@@ -1,3 +1,20 @@
-<h1> Sitio web con Github Pages</h1>
-<p>---relleno---<p>
-<p></p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Diseño.css">
+    <title>NicoTrabajos</title>
+    <script src="informacion_usuarios.js" defer></script>
+</head>
+<body>
+    <div id="datos_empleado">
+        <input id="nombre" type="text" placeholder="Digite aquí su nombre" required>
+        <input id="correo_electronico" type="text" placeholder="Digite aquí su correo electrónico" required>
+        <input id="telefono" type="text" placeholder="Digite aquí su teléfono">
+        <label for="archivo">Hoja de vida:</label>
+        <input id="archivo" type="file">
+        <button onclick="guardarInformacion()">Guardar Información</button>
+    </div>
+</body>
+</html>
