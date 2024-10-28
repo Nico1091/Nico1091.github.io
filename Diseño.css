@@ -1,7 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    background-color: beige;
+    background-color: white;
     margin: 30px;
 }
 
@@ -34,4 +34,10 @@ input, label {
 
 .boton-guardar:hover {
     background-color: #555;
+}
+header{
+    display: flex;
+}
+header img{
+    margin: 0 auto;
 }
