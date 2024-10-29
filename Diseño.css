@@ -73,7 +73,7 @@ header .cont-logo {
         width: 100%; 
     }
 }
-.bacground{
+.background{
     background-color: rgba(75, 145, 75, 0.7);
     background-image: url(img/fondo-header.png);
     background-size: 100rem;
@@ -89,7 +89,7 @@ header .cont-logo {
     }
 }
 @media (max-width: 768px) {
-    .bacground {
+    .background {
         padding: 100px; 
         background-size: cover;
         background-position: center; 
@@ -194,4 +194,49 @@ select option {
         margin-top: 0.2rem;
         text-align: center;
     }
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1500px; /* Aumenta el ancho máximo para darle más espacio */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0 10px;
+}
+
+.especialidad {
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 1rem;
+    color: #666;
 }

@@ -9,6 +9,15 @@ function mostrarFormulario(tipo) {
        
     }
 }
+function mostrarFormulario(tipo) {
+    if (tipo === 'empleado') {
+        // Oculta el contenido inicial y muestra los términos para empleados
+        document.getElementById('inicio').style.display = 'none';
+        document.getElementById('terminosEmpleado').style.display = 'block';
+    }
+    // Puedes agregar funcionalidad para empleador si es necesario
+}
+
 
 function guardarInformacion() {
     let nombre = document.querySelector("#nombre").value;
