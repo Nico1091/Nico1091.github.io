@@ -42,7 +42,7 @@ document.getElementById('searchBar').addEventListener('input', (event) => {
     const searchTerm = event.target.value.toLowerCase();
     const filteredData = jsonData.filter(item => {
         // Verificar que los campos existen antes de usar toLowerCase
-        const nombre = item.Column3 ? item.Column3.toLowerCase() : "";
+        const nombre = item.Column12 ? item.Column12.toLowerCase() : "";
         const descripcion = item.Column5 ? item.Column5.toLowerCase() : "";
         const competencias = item.Column8 ? item.Column8.toLowerCase() : "";
         
