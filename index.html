@@ -3,44 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Diseño.css">
+    <link rel="stylesheet" href="diseño.css">
     <title>NicoTrabajos</title>
     <script src="informacion_usuarios.js" defer></script>
 </head>
 <body>
-
     <header>
-        <img src="img/logosimon.png" alt="logosimon">
+        <div class="cont-logo"><img src="img/logosimon.png" alt="logosimon"></div>
     </header>
-    <!-- Pantalla de inicio -->
-    <div id="inicio">
-        <h2>¿Eres empleado o empleador?</h2>
-        <button onclick="mostrarFormulario('empleador')">Empleador</button>
-        <button onclick="mostrarFormulario('empleado')">Empleado</button>
+    <div class="bacground">
+        <div class="div-back">        
+            <div class="search">
+                <span>Búsqueda de Profesores</span>
+                <p>"Conectando el talento académico con el mundo <br> impulsaremos juntos la visibilidad de nuestros profesores."</p>
+                <input 
+                    placeholder="Departamento académico"
+                    class="in_profesion"
+                    id="in_profesion"
+                >
+            </div>
+            <div class="otrofiltro-div">
+                <div>
+                    <span>Experiencia (años)</span>
+                    <input 
+                        type="number" 
+                        max="100" min="1" 
+                        id="in_experiencia"
+                    >
+                </div>
+                <div>
+                    <span>Nivel Académico</span>
+                    <select 
+                        name="in_nivelAcademico" 
+                        id="in_nivelAcademico"
+                    >
+                        <option value="">Maestría</option> 
+                        <option value="">Especialización</option> 
+                        <option value="">Doctorado</option> 
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Formulario para empleador -->
-    <div id="datos_empleador" style="display: none;">
-        <input id="nombre_empleador" type="text" placeholder="Digite aquí su nombre" required>
-        <input id="telefono_empleador" type="text" placeholder="Digite aquí su teléfono">
-    </div>
-
-    <!-- Formulario para empleado -->
-    <div id="datos_empleado" style="display: none;">
-        <input id="nombre" type="text" placeholder="Digite aquí su nombre" required>
-        <input id="correo_electronico" type="text" placeholder="Digite aquí su correo electrónico" required>
-        <input id="telefono" type="text" placeholder="Digite aquí su teléfono">
-        <label for="archivo">Hoja de vida:</label>
-        <input id="archivo" type="file">
-        <button onclick="guardarInformacion()">Guardar Información</button>
-    </div>
-
-    <!-- Buscador de empleados -->
-    <div id="buscador_empleados" style="display: none;">
-        <input id="buscar_nombre" type="text" placeholder="Buscar empleado por nombre">
-        <button onclick="buscarEmpleado()">Buscar</button>
-        <div id="resultado_busqueda"></div>
-    </div>
-
+    <main>
+        <div class="co-movil">
+        <div class="ti-movil">
+            <p>Muy Pronto lo veras en tu Appstore o Playstore</p>
+        </div>
+        <div class="im-movil">
+            <img src="img/movilbg.png" alt="telfono">
+        </div>
+        </div>
+        <!-- Pantalla de inicio
+        <div id="inicio">
+            <h2>¿Eres empleado o empleador?</h2>
+            <button onclick="mostrarFormulario('empleador')">Empleador</button>
+            <button onclick="mostrarFormulario('empleado')">Empleado</button>
+        </div>
+    
+         Formulario para empleador -->
+        <!-- <div id="datos_empleador" style="display: none;">
+            <input id="nombre_empleador" type="text" placeholder="Digite aquí su nombre" required>
+            <input id="telefono_empleador" type="text" placeholder="Digite aquí su teléfono">
+        </div>
+    
+        < Formulario para empleado -->
+        <!-- <div id="datos_empleado" style="display: none;">
+            <input id="nombre" type="text" placeholder="Digite aquí su nombre" required>
+            <input id="correo_electronico" type="text" placeholder="Digite aquí su correo electrónico" required>
+            <input id="telefono" type="text" placeholder="Digite aquí su teléfono">
+            <label for="archivo">Hoja de vida:</label>
+            <input id="archivo" type="file">
+            <button onclick="guardarInformacion()">Guardar Información</button>
+        </div>
+    
+        Buscador de empleados -->
+        <!-- <div id="buscador_empleados" style="display: none;">
+            <input id="buscar_nombre" type="text" placeholder="Buscar empleado por nombre">
+            <button onclick="buscarEmpleado()">Buscar</button>
+            <div id="resultado_busqueda"></div>
+        </div>   -->
+    </main>
 </body>
 </html>
