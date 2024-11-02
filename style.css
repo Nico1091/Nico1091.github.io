@@ -1,0 +1,39 @@
+body {
+    background-color: #e6ccff; /* Morado suave */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: black    ; /* Color oscuro para el título */
+    text-align: center;
+   }
+
+#BotonLina {
+    margin: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+#BotonLina img {
+    width: 500px;
+    height: 500px;
+
+}
+
+
+.extra-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
