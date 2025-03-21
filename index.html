@@ -27,22 +27,19 @@
 <body>
 
     <h2>ESO</h2>
-    <input type="text" id="chatbox" placeholder="ESO...">
+    <input type="text" id="chatbox" placeholder="ESO">
     <p id="respuesta"></p>
 
     <script>
         document.getElementById("chatbox").addEventListener("keypress", function(event) {
             if (event.key === "Enter") {
                 let respuestaElement = document.getElementById("respuesta");
-                respuestaElement.innerText = "Eso"; // Muestra el mensaje de carga
+                respuestaElement.innerText = "ESO......"; // Muestra primero ESO......
 
                 setTimeout(() => {
-                    let pregunta = this.value.toLowerCase();
-                    let respuesta = "Eso......"; // Respuesta fija
-
-                    respuestaElement.innerText = respuesta; // Muestra la respuesta final
-                    this.value = ""; // Limpia la entrada después de enviar la pregunta
-                }, 2000); // Espera 2 segundos antes de mostrar la respuesta
+                    respuestaElement.innerText = "Eso"; // Luego muestra Eso
+                    this.value = ""; // Limpia la entrada
+                }, 2000); // Espera 2 segundos antes de cambiar el texto
             }
         });
     </script>
