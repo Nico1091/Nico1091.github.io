@@ -1,0 +1,21 @@
+El diseño del código basado en este modelo tiene una estructura sólida y bien organizada, pero hay algunos puntos que podrías considerar para mejorar la implementación:
+
+Puntos Positivos:
+✅ Uso de Herencia: La jerarquía Person → Student/Professor está bien planteada, permitiendo reutilización de código y una estructura clara.
+✅ Separación de Responsabilidades: La Address es una clase independiente, lo que facilita su validación y reusabilidad.
+✅ Restricciones Lógicas: La relación Person-Address (0..1 a 1) evita inconsistencias, asegurando que una persona tenga como máximo una dirección.
+
+Posibles Mejoras:
+🔹 Encapsulación: Los atributos deberían ser privados o protegidos, con métodos getters y setters para acceder/modificar los datos de forma controlada.
+🔹 Métodos en Professor: Actualmente, Professor solo tiene salary. Podría incluir métodos adicionales como assignCourse() o calculateSalary().
+🔹 Validaciones en Student: El método isEligibleToEnroll() debería verificar condiciones específicas (ej., averageMark > 50).
+🔹 Optimización de Address: validate() podría incluir reglas más concretas (ej., verificar formato de código postal).
+
+En general, el modelo está bien estructurado, pero se pueden agregar mejoras en encapsulación, validaciones y métodos adicionales para mayor funcionalidad. 🚀
+
+
+
+
+
+
+
